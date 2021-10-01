@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Tienda de ropa en linea con el objetivo de seguir creciendo con nuestra marca el mejor precio y calidad en venezuela" name="description">
+    <meta content="Tienda de ropa en linea con el objetivo de seguir creciendo con nuestra marca el mejor precio y calidad en venezuela" property="og:description">
+    <meta name="theme-color" content="#1c0522">
+    <meta property="og:title" content="Lunar shop">
+    <link rel="shortcut icon" href="logo-modified.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Lunar shop</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"> </a>
+        <ul>
+            <li><a href="#" class="active">Inicio</a></li>
+            <li><a href="index.html#shop">Tienda</a></li>
+            <li><a href="nav/contact.html">contacto</a></li>
+        </ul>
+    </header>    
+    <section>
+        <img src="stars.png" alt="stars" id="stars">
+        <img src="moon.png" alt="moon" id="moon">
+        <img src="mountains_behind.png" alt="mountains behind" id="mountains_behind">
+        <h1 id="text">Lunar</h1>
+        <a href="#sec" class="btn" id="btn">explorar</a>
+        <img src="mountains_front.png" alt="mountains front" id="mountains_front">
+    </section>
+    <div class="sec" id="sec">
+        <h2 id="shop">Tienda</h2>
+        <p>Somos una tienda en linea ubicados en caracas venezuela, en dónde pondrás encontrar los <strong>mejores diseños  en camisas</strong></p>
+        <br><p>A continuacion esta nuestro catalogo completo para entrega inmediata, realizamos entregas en: <b>Capitolio, La hoyada, Parque Carabobo y Plaza venezuela</b></p><br>
+        <ul class="container">
+            <li><a href="nav/chainsawman.html"><img src="franelas/csm.jpg" alt="" id="tshirt"></a><p class="texto-franelas">Frenelas Chainsaw man 10$</p></P></li>
+            <li><a href="nav/myheroacademia.html"><img src="franelas/Deku.jpg" alt="" id="tshirt"></a><p class="texto-franelas">Franelas My hero academia 10$</p></li>
+            <li><a href="nav/jujutsukaisenv1.html"><img src="franelas/Jujutsu.jpg" alt="" id="tshirt"></a><p class="texto-franelas">Franelas Jujutsu kaisen 10$</p></li>
+            <li><a href="nav/jujutsukaisenv2.html"><img src="franelas/jujutsukaisen.jpg" alt="" id="tshirt"></a><p class="texto-franelas">Franelas Jujutsu kaisen 10$</p></li>
+            <li><a href="nav/leviackerman.html"><img src="franelas/Levi.jpg" alt="" id="tshirt"></a><p class="texto-franelas">Franelas Attack on titan 10$</p></li>
+            <li><a href="nav/mychemicalromance.html"><img src="franelas/MCR.jpg" alt="" id="tshirt"></a><p class="texto-franelas">Franelas My chemical romance 10$</p></li>
+            <li><a href="nav/mikasa.html"><img src="franelas/Mikasa.jpg" alt="" id="tshirt"></a><p class="texto-franelas">Franelas Attack on titan 10$</p></li>
+        </ul>
+    </div>
+    <div class="sec2">
+    </div>
+    <footer>
+        <p>© 2021 Derechos reservados <i>Kley Lunar</i></p>
+    </footer>
+
+    <script>
+        let stars = document.getElementById('stars')
+        let moon = document.getElementById('moon')
+        let mountains_behind = document.getElementById('mountains_behind')
+        let text = document.getElementById('text')
+        let btn = document.getElementById('btn')
+        let mountains_front = document.getElementById('mountains_front')
+        let header = document.querySelector('header');
+        
+        window.addEventListener('scroll',function(){
+            let value = window.scrollY;
+            stars.style.left = value *0.5 + 'px';
+            moon.style.top = value *1.05 + 'px';
+            mountains_behind.style.top = value *0.8 + 'px';
+            mountains_front.style.top = value *0 + 'px';
+            text.style.marginTop = value *1.5 + 'px';
+            btn.style.marginTop = value *2 + 'px';
+            header.style.top = value *0.5 + 'px';
+        })
+    </script>
+</body>
+</html>

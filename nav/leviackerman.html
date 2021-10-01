@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Tienda de ropa en linea con el objetivo de seguir creciendo con nuestra marca">
+    <meta name="theme-color" content="#1c0522">
+    <meta property="og:title" content="franela Attack on titan">
+    <link rel="shortcut icon" href="../logo-modified.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/leviackerman.css">
+    <title>Tshirt - attack on titan</title>
+</head>
+<body>
+    <header id="contacto">
+        <a href="#" class="logo"> </a>
+         <ul>
+             <li><a href="../index.html">Inicio</a></li>
+             <li><a href="../index.html#shop" class="active">Tienda</a></li>
+             <li><a href="../nav/contact.html">contacto</a></li>
+         </ul>
+     </header>    
+     <section>
+         <img src="../stars.png" alt="stars" id="stars">
+         <img src="../moon.png" alt="moon" id="moon">
+         <img src="../mountains_behind.png" alt="mountains behind" id="mountains_behind">
+         <h1 id="text">Lunar</h1>
+         <a href="#sec" class="btn" id="btn">explorar</a>
+         <img src="../mountains_front.png" alt="mountains front" id="mountains_front">
+     </section>
+     <div class="sec" id="sec">
+         <article class="article_item">
+             <img src="../franelas/Levi.jpg" alt="levi Ackerman" id="tshirt">
+             <div class="posit">
+                 <h2 class="titulo">Franela Attack on titan - Levi Ackerman 10$</h2>
+                 <br>
+                 <span class="articonte">Franela 100% hecha de Algodon, con estampado de serigrafia llamativo</span>
+                 <br><br>
+                 <span class="btnsize">S</span><span class="btnsize">M</span><span class="btnsize">L</span><span class="btnsize">XL</span>
+                 <br><br><br>
+                 <span>Para realizar un pedido comunicarse al whatsapp con el producto que desea encargar para una mejor atencion al cliente</span>
+             </span><a href="https://api.whatsapp.com/send?phone=+584143279868&text=¿Quiero ordenar la frenela de Attack on titan 😃?" target="_blank" class="btn-wsp">whatsapp</a>
+             </div>
+         </article>
+     </div>
+     <footer>
+        <p>© 2021 Derechos reservados <i>Kley Lunar</i></p>
+    </footer>
+
+     <script>
+         let stars = document.getElementById('stars')
+         let moon = document.getElementById('moon')
+         let mountains_behind = document.getElementById('mountains_behind')
+         let text = document.getElementById('text')
+         let btn = document.getElementById('btn')
+         let mountains_front = document.getElementById('mountains_front')
+         let header = document.querySelector('header');
+         
+         window.addEventListener('scroll',function(){
+             let value = window.scrollY;
+             stars.style.left = value *0.5 + 'px';
+             moon.style.top = value *1.05 + 'px';
+             mountains_behind.style.top = value *0.8 + 'px';
+             mountains_front.style.top = value *0 + 'px';
+             text.style.marginTop = value *1.5 + 'px';
+             btn.style.marginTop = value *2 + 'px';
+             header.style.top = value *0.5 + 'px';
+         })
+     </script>
+</body>
+</html>
